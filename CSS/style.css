@@ -13,26 +13,29 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 16px 40px;
+  padding: 20px 0;
   background: #111;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  gap: 16px;
 }
 
 .logo {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: bold;
   color: #ff6b9d;
 }
 
+.nav {
+  gap: 30px;
+  display: flex;
+}
+
 .nav a {
-  margin-left: 24px;
   text-decoration: none;
-  color: #555;
-  font-weight: 500;
+  color: #ccc;
+  transition: 0.2s;
+  font-size: 1rem;
 }
 
 .nav a:hover,
@@ -141,19 +144,10 @@ body {
   .header {
     flex-direction: column;
     gap: 12px;
-    padding: 16px;
+    padding: 16px 20px;
   }
 
-  .nav a {
-    margin: 0 10px;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .character-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 16px;
+  .nav {
+    gap: 20px;
   }
 }
