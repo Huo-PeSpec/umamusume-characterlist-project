@@ -83,10 +83,13 @@ body {
 }
 
 .section-title {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 1.8rem;
-  color: #ff6b9d;
+  background-color: 0f0f1a;
+  border: 1px solid #2a2a40;
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin: 30px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
 }
 
 .character-grid {
@@ -139,6 +142,88 @@ body {
   font-size: 0.9rem;
   margin-top: 40px;
 }
+
+.about-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  color: #eee;
+}
+
+.about-title {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 22px;
+}
+
+.filters-box {
+  background: #1a1a2e;
+  border: 1px solid #2a2a40;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 30px;
+}
+
+.filters-title {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-label {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-btn {
+  background: #2a2a40;
+  border: 1px solid #3a3a55;
+  color: #ccc;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: #ff6b9d;
+  color: #ff6b9d;
+}
+
+.filter-btn.active {
+  background: #ff6b9d;
+  border-color: #ff6b9d;
+  color: white;
+}
+
+.sort-buttons {
+  gap: 8px;
+}
+
+.loading-text {
+  text-align: center;
+  color: #888;
+  margin-top: 20px;
+}
+
+
+
+
+
+
 
 @media (max-width: 768px) {
   .header {

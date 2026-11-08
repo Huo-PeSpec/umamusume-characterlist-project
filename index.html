@@ -1,42 +1,78 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Umamusume-characterlist Home</title>
-    <link rel="stylesheet" href="/CSS/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="logo">umamusume-characterlist</div>
-      <nav class="nav">
-        <a href="index.html" class="active">Home</a>
-        <a href="characterlist.html">Character List</a>
-        <a href="login.html" id="login-btn">Login</a>
-      </nav>
-    </header>
 
-    <section class="hero">
-      <div class="hero-content">
-        <h1>Welcome umamusume-characterlist.</h1>
-        <p>This website was created to explore the character.</p>
-        <a href="characterlist.html" class="btn-primary">View Character List</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umamusume-characterlists Home</title>
+  <link rel="stylesheet" href="/CSS/style.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">umamusume-characterlist</div>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="characterlist.html">Character List</a>
+      <a href="login.html" id="login-btn">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome umamusume-characterlist.</h1>
+      <p>This website was created to explore the character.</p>
+      <a href="characterlist.html" class="btn-primary">View Character List</a>
+    </div>
+  </section>
+
+  <main class="about-section">
+    <h1 class="about-title">Lists of umamusume Characters</h1>
+    <div class="filter-group">
+      <p class="filter-label">Sort</p>
+      <div class="filter-group">
+        <p class="filter-label">Rarity</p>
+        <div class="filter-buttons">
+          <button class="filter-btn">3★</button>
+          <button class="filter-btn">2★</button>
+          <button class="filter-btn">1★</button>
+        </div>
       </div>
-    </section>
-
-    <main class="container">
-      <h2 class="section-title">About umamusume-characterlist</h2>
-      <div class="character-grid" id="character-grid">
-        <p>Loading characters...</p>
+      <div class="filter-group">
+        <p class="filter-label">Release</p>
+        <div class="filter-buttons">
+          <button class="filter-btn active">Released</button>
+          <button class="filter-btn">Unreleased</button>
+        </div>
       </div>
-    </main>
+      <div class="filter-buttons sort-buttons">
+        <button class="filter-btn">Rarity</button>
+        <button class="filter-btn">Name</button>
+        <button class="filter-btn active">Release ↓</button>
+        <button class="filter-btn">Turf</button>
+        <button class="filter-btn">Dirt</button>
+        <button class="filter-btn">Sprint</button>
+        <button class="filter-btn">Mile</button>
+        <button class="filter-btn">Medium</button>
+        <button class="filter-btn">Long</button>
+        <button class="filter-btn">Front</button>
+        <button class="filter-btn">Pace</button>
+        <button class="filter-btn">Late</button>
+        <button class="filter-btn">End</button>
+        <button class="filter-btn">User Score</button>
+      </div>
+    </div>
+    </div>
+    </div>
+  </main>
 
-    <footer class="footer">
-      <p>
-        Data from
-        <a href="https://umapyoid.net" target="_blank">umapyoid.net</a> | © 2026
-        umamusume-characterlist
-      </p>
-    </footer>
-  </body>
+  <footer class="footer">
+    <p>
+      Data from
+      <a href="https://umapyoid.net" target="_blank">umapyoid.net</a> | © 2026
+      umamusume-characterlist
+    </p>
+  </footer>
+</body>
+
 </html>
