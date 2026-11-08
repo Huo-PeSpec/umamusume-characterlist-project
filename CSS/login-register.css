@@ -5,21 +5,24 @@
 }
 
 body {
-  background-color: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
-  color: rgb(248, 246, 246);
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  color: white;
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 20px;
 }
 
 .container {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   background: #171717;
   padding: 45px 35px;
   border-radius: 12px;
   text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -29,38 +32,49 @@ h1 {
 
 p {
   color: #aaa;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 8px;
+  color: #ddd;
+  font-size: 14px;
 }
 
 input {
   width: 100%;
   padding: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   background: #222;
   border: 1px solid #333;
   border-radius: 9px;
   color: white;
+  outline: none;
+}
+
+input:focus {
+  border-color: #ff9a9e;
 }
 
 button {
   width: 100%;
   padding: 17px;
-  margin-bottom: 15px;
+  margin-top: 5px;
   border: none;
   border-radius: 10px;
   font-size: 16px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.google {
-  background: rgb(237, 102, 102);
-  color: #222;
-}
-
-.discord {
-  background: #5865f2;
+  background: #ed6666;
   color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff8585;
+  transform: translateY(-2px);
 }
 
 .switch {
@@ -70,7 +84,7 @@ button {
 }
 
 a {
-  color: #7289ff;
+  color: #ff9a9e;
   text-decoration: none;
   font-weight: bold;
 }
