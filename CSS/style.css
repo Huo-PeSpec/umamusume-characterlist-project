@@ -27,15 +27,15 @@ body {
 }
 
 .nav {
-  gap: 30px;
   display: flex;
+  gap: 30px;
 }
 
 .nav a {
   text-decoration: none;
   color: #ccc;
-  transition: 0.2s;
   font-size: 1rem;
+  transition: 0.2s;
 }
 
 .nav a:hover,
@@ -76,6 +76,53 @@ body {
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
+.search-bar {
+  max-width: 920px;
+  margin: 20px auto 30px;
+  padding: 0 10px;
+}
+
+.showing-text {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: #888;
+  pointer-events: none;
+}
+
+#search-input {
+  width: 100%;
+  padding: 14px 16px 14px 44px;
+  background-color: #1a1a2e;
+  border: 1px solid #3a3a55;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+#search-input::placeholder {
+  color: #777;
+}
+
+#search-input:focus {
+  border-color: #ff6b9d;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -83,13 +130,10 @@ body {
 }
 
 .section-title {
-  background-color: #0f0f1a;
-  border: 1px solid #2a2a40;
-  border-radius: 12px;
-  padding: 24px 28px;
-  margin: 30px auto;
-  max-width: 900px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 1.8rem;
+  color: #ff6b9d;
+  margin-bottom: 30px;
 }
 
 .character-grid {
@@ -99,12 +143,14 @@ body {
 }
 
 .character-card {
-  background: white;
-  border-radius: 16px;
+  background: #1a1a1a;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
   cursor: pointer;
+  text-align: center;
+  padding-bottom: 12px;
 }
 
 .character-card:hover {
@@ -114,24 +160,25 @@ body {
 
 .character-card img {
   width: 100%;
-  height: 240px;
+  height: 180px;
   object-fit: cover;
+  object-position: center 15%;
   display: block;
 }
 
 .character-card .info {
-  padding: 14px;
-  text-align: center;
+  padding: 10px 8px 4px;
 }
 
 .character-card h3 {
-  font-size: 1.1rem;
-  margin-bottom: 4px;
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+  color:#fff;
 }
 
 .character-card .jp-name {
-  font-size: 0.85rem;
-  color: #888;
+  font-size: 0.75rem;
+  color: #aaa;
 }
 
 .footer {
@@ -141,61 +188,6 @@ body {
   color: #777;
   font-size: 0.9rem;
   margin-top: 40px;
-}
-
-.filters-container {
-  background-color: #0f0f1a;
-  border: 1px solid #2a2a40;
-  border-radius: 12px;
-  padding: 24px 28px;
-  margin: 30px auto;
-  max-width: 900px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
-
-.filters-title {
-  color: #ffffff;
-  font-size: 1.25rem;
-  margin-bottom: 22px;
-  font-weight: 600;
-}
-
-.filter-group {
-  margin-bottom: 20px;
-}
-
-.filter-label {
-  color: #a0a0b8;
-  font-size: 0.95rem;
-  margin-bottom: 10px;
-}
-
-.filter-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.filter-btn {
-  background-color: #1a1a2e;
-  border: 1px solid #3a3a55;
-  color: #c8c8d8;
-  padding: 9px 18px;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.filter-btn:hover {
-  border-color: #ff6b9d;
-  color: #ff6b9d;
-}
-
-.filter-btn.active {
-  background-color: #1e3a5f;
-  border-color: #3b82f6;
-  color: #ffffff;
 }
 
 .filter-box {
@@ -252,14 +244,23 @@ body {
   border-color: #3b82f6;
   color: #ffffff;
 }
+
+
 @media (max-width: 768px) {
   .header {
-    flex-direction: column;
-    gap: 12px;
     padding: 16px 20px;
   }
 
   .nav {
     gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .character-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 16px;
   }
 }

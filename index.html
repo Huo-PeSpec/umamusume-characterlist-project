@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Umamusume-characterlists Home</title>
-  <link rel="stylesheet" href="/CSS/style.css" />
+  <title>Umamusume Character List - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -15,25 +15,36 @@
       <a href="index.html" class="active">Home</a>
       <a href="characterlist.html">Character List</a>
       <a href="login.html" id="login-btn">Login</a>
+      <a href="register.html" id="register-btn">Register</a>
     </nav>
   </header>
 
   <section class="hero">
     <div class="hero-content">
-      <h1>Welcome umamusume-characterlist.</h1>
-      <p>This website was created to explore the character.</p>
+      <h1>Welcome to umamusume-characterlist</h1>
+      <p>This website was created to explore Uma Musume characters.</p>
       <a href="characterlist.html" class="btn-primary">View Character List</a>
     </div>
   </section>
 
-  <main class="about-section">
-    <h1 class="about-title">Lists of umamusume Characters</h1>
-    <div class="filter-container">
-      <p class="filter-label">Advanced Filters</p>
+  <main class="container">
+    <h2 class="section-title">Lists of Umamusume Characters</h2>
+
+    <div class="search-bar">
+      <p class="showing-text">Showing: <span id="item-count">0</span> items</p>
+
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search..." autocomplete="off">
+      </div>
+    </div>
+
+    <div class="filter-box">
+      <h3 class="filter-title">Advanced Filters</h3>
 
       <div class="filter-group">
         <p class="filter-label">Rarity</p>
-        <div class="filter-buttons">
+        <div class="filter-row">
           <button class="filter-btn">3★</button>
           <button class="filter-btn">2★</button>
           <button class="filter-btn">1★</button>
@@ -42,7 +53,7 @@
 
       <div class="filter-group">
         <p class="filter-label">Release</p>
-        <div class="filter-buttons">
+        <div class="filter-row">
           <button class="filter-btn active">Released</button>
           <button class="filter-btn">Unreleased</button>
         </div>
@@ -50,7 +61,7 @@
 
       <div class="filter-group">
         <p class="filter-label">Sort</p>
-        <div class="filter-buttons">
+        <div class="filter-row">
           <button class="filter-btn">Rarity</button>
           <button class="filter-btn">Name</button>
           <button class="filter-btn active">Release ↓</button>
@@ -64,7 +75,22 @@
           <button class="filter-btn">Pace</button>
           <button class="filter-btn">Late</button>
           <button class="filter-btn">End</button>
-          <button class="filter-btn">User Score</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="character-grid" id="character-grid">
+      <p style="grid-column: 1 / -1; text-align: center; color: #888">
+        Loading characters...
+      </p>
+    </div>
+
+    <div class="character-grid">
+      <div class="character-card" onclick="goToDetail(1001)">
+        <img src="https://umapyoi.net/images/characters/thumb/1001.png" alt="Special Week" loading="lazy" />
+        <div class="info">
+          <h3>Special Week</h3>
+          <p class="jp-name">スペシャルウィーク</p>
         </div>
       </div>
     </div>
@@ -73,10 +99,12 @@
   <footer class="footer">
     <p>
       Data from
-      <a href="https://umapyoid.net" target="_blank">umapyoid.net</a> | © 2026
-      umamusume-characterlist
+      <a href="https://umapyoi.net" target="_blank">umapyoi.net</a>
+      | © 2026 umamusume-characterlist
     </p>
   </footer>
+
+  <script src="Javascript/home.js"></script>
 </body>
 
 </html>
