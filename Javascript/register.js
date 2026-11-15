@@ -34,5 +34,5 @@ register.addEventListener("submit", (event) => {
 
   alert("Register successfully!");
 
-  location.href = "./login.html";
+  location.href = "../Webpages/login.html";
 });

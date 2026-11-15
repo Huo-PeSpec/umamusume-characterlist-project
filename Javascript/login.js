@@ -25,7 +25,7 @@ login.addEventListener("submit", (event) => {
     );
 
     alert("Login successfully!");
-    location.href = "./index.html";
+    location.href = "../index.html";
   } else {
     alert("Invalid username or password!");
   }
