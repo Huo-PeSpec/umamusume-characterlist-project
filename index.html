@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -27,12 +27,40 @@
     </div>
   </section>
 
+  <section class="info-section">
+    <div class="reset-times">
+      <div class="reset-item">
+        <p class="reset-label">Login bonus reset (JP)</p>
+        <p class="reset-time" id="jp-login">--:--:--</p>
+      </div>
+      <div class="reset-item">
+        <p class="reset-label">Login bonus reset (EN)</p>
+        <p class="reset-time" id="en-login">--:--:--</p>
+      </div>
+      <div class="reset-item">
+        <p class="reset-label">Content reset (JP)</p>
+        <p class="reset-time" id="jp-content">--:--:--</p>
+      </div>
+      <div class="reset-item">
+        <p class="reset-label">Content reset (EN)</p>
+        <p class="reset-time" id="en-content">--:--:--</p>
+      </div>
+    </div>
+
+    <div class="birthday-box">
+      <h3>Next birthday (January 21)</h3>
+      <div class="birthday-character">
+        <img src="/images/symboli-kris-s.png" alt="Symboli Kris S"
+          onerror="this.src='https://via.placeholder.com/42x42?text=KS'"> <span>Symboli Kris S</span>
+      </div>
+    </div>
+  </section>
+
   <main class="container">
     <h2 class="section-title">Lists of Umamusume Characters</h2>
 
     <div class="search-bar">
       <p class="showing-text">Showing: <span id="item-count">0</span> items</p>
-
       <div class="search-input-wrapper">
         <span class="search-icon">🔍</span>
         <input type="text" id="search-input" placeholder="Search..." autocomplete="off">
@@ -80,19 +108,9 @@
     </div>
 
     <div class="character-grid" id="character-grid">
-      <p style="grid-column: 1 / -1; text-align: center; color: #888">
+      <p style="grid-column: 1 / -1; text-align: center; color: #888;">
         Loading characters...
       </p>
-    </div>
-
-    <div class="character-grid">
-      <div class="character-card" onclick="goToDetail(1001)">
-        <img src="https://umapyoi.net/images/characters/thumb/1001.png" alt="Special Week" loading="lazy" />
-        <div class="info">
-          <h3>Special Week</h3>
-          <p class="jp-name">スペシャルウィーク</p>
-        </div>
-      </div>
     </div>
   </main>
 
