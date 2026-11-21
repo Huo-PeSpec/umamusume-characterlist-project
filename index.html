@@ -5,17 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Umamusume Character List - Home</title>
-  <link rel="stylesheet" href="./CSS/style.css"/>
+  <link rel="stylesheet" href="./CSS/style.css" />
 </head>
 
 <body>
   <header class="header">
     <div class="logo">umamusume-characterlist</div>
     <nav class="nav">
-      <a href="../index.html" class="active">Home</a>
-      <a href="../Webpages/characterlist.html">Character List</a>
-      <a href="../Webpages/login.html" class="active" id="login-btn">Login</a>
-      <a href="../Webpages/register.html" class="active" id="register-btn">Register</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="./Webpages/characterlist.html">Character List</a>
+      <a href="./Webpages/login.html">Login</a>
+      <a href="./Webpages/register.html">Register</a>
     </nav>
   </header>
 
@@ -23,7 +23,7 @@
     <div class="hero-content">
       <h1>Welcome to umamusume-characterlist</h1>
       <p>This website was created to explore Uma Musume characters.</p>
-      <a href="characterlist.html" class="btn-primary">View Character List</a>
+      <a href="./Webpages/characterlist.html" class="btn-primary">View Character List</a>
     </div>
   </section>
 
@@ -50,69 +50,20 @@
     <div class="birthday-box">
       <h3>Next birthday (January 21)</h3>
       <div class="birthday-character">
-        <img src="images/symboli-kris-s.png" alt="Symboli Kris S"
-          onerror="this.src='https://via.placeholder.com/42x42?text=KS'"> <span>Symboli Kris S</span>
+        <img src="images/symboli-kris-s.png" alt="Symboli Kris S">
+        <span>Symboli Kris S</span>
       </div>
+    </div>
     </div>
   </section>
 
-  <main class="container">
-    <h2 class="section-title">Lists of Umamusume Characters</h2>
-
-    <div class="search-bar">
-      <p class="showing-text">Showing: <span id="item-count">0</span> items</p>
-      <div class="search-input-wrapper">
-        <span class="search-icon">🔍</span>
-        <input type="text" id="search-input" placeholder="Search..." autocomplete="off">
-      </div>
+  <section class="gacha-section">
+    <h2 class="gacha-title">Current Gacha Banners</h2>
+    <div class="gacha-grid" id="gacha-grid">
+      <p>Loading Gacha Banners...</p>
     </div>
+  </section>
 
-    <div class="filter-box">
-      <h3 class="filter-title">Advanced Filters</h3>
-
-      <div class="filter-group">
-        <p class="filter-label">Rarity</p>
-        <div class="filter-row">
-          <button class="filter-btn">3★</button>
-          <button class="filter-btn">2★</button>
-          <button class="filter-btn">1★</button>
-        </div>
-      </div>
-
-      <div class="filter-group">
-        <p class="filter-label">Release</p>
-        <div class="filter-row">
-          <button class="filter-btn active">Released</button>
-          <button class="filter-btn">Unreleased</button>
-        </div>
-      </div>
-
-      <div class="filter-group">
-        <p class="filter-label">Sort</p>
-        <div class="filter-row">
-          <button class="filter-btn">Rarity</button>
-          <button class="filter-btn">Name</button>
-          <button class="filter-btn active">Release ↓</button>
-          <button class="filter-btn">Turf</button>
-          <button class="filter-btn">Dirt</button>
-          <button class="filter-btn">Sprint</button>
-          <button class="filter-btn">Mile</button>
-          <button class="filter-btn">Medium</button>
-          <button class="filter-btn">Long</button>
-          <button class="filter-btn">Front</button>
-          <button class="filter-btn">Pace</button>
-          <button class="filter-btn">Late</button>
-          <button class="filter-btn">End</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="character-grid" id="character-grid">
-      <p style="grid-column: 1 / -1; text-align: center; color: #888;">
-        Loading characters...
-      </p>
-    </div>
-  </main>
 
   <footer class="footer">
     <p>

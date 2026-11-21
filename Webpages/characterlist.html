@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character List - Umamusume</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">umamusume-characterlist</div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="characterlist.html" class="active">Character List</a>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2 class="section-title">Lists of Umamusume Characters</h2>
+
+    <div class="search-bar">
+      <p class="showing-text">Showing: <span id="item-count">0</span> items</p>
+      <div class="search-input-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input" placeholder="Search..." autocomplete="off">
+      </div>
+    </div>
+
+    <div class="filter-box">
+      <div class="filter-box">
+  <h3 class="filter-title">Advanced Filters</h3>
+
+  <div class="filter-group">
+    <p class="filter-label">Rarity</p>
+    <div class="filter-row">
+      <button class="filter-btn">3★</button>
+      <button class="filter-btn">2★</button>
+      <button class="filter-btn">1★</button>
+    </div>
+  </div>
+
+  <div class="filter-group">
+    <p class="filter-label">Release</p>
+    <div class="filter-row">
+      <button class="filter-btn active">Released</button>
+      <button class="filter-btn">Unreleased</button>
+    </div>
+  </div>
+
+  <div class="filter-group">
+    <p class="filter-label">Sort</p>
+    <div class="filter-row">
+      <button class="filter-btn">Rarity</button>
+      <button class="filter-btn">Name</button>
+      <button class="filter-btn active">Release ↓</button>
+      <button class="filter-btn">Turf</button>
+      <button class="filter-btn">Dirt</button>
+      <button class="filter-btn">Sprint</button>
+      <button class="filter-btn">Mile</button>
+      <button class="filter-btn">Medium</button>
+      <button class="filter-btn">Long</button>
+      <button class="filter-btn">Front</button>
+      <button class="filter-btn">Pace</button>
+      <button class="filter-btn">Late</button>
+      <button class="filter-btn">End</button>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <div class="character-grid" id="character-grid">
+      <p style="grid-column: 1 / -1; text-align: center; color: #888;">
+        Loading characters...
+      </p>
+    </div>
+  </main>
+
+  <script src="../Javascript/characterlist.js"></script>
+</body>
+</html>
